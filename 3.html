@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            font-size: 24px;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-content: end;
+
+        }
+        .container{
+            margin-top: 220px;
+            width: 100%vh;
+            min-height: 400px;
+            padding-top: 50px;
+            padding-left: 50px;
+            background-color: rgb(43, 39, 39);
+            position: relative;/*should be relative if you use fixed it show only how much the screen occupies the content */
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            top: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-flow: auto;/*allow scrolling*/
+        }
+        .box1{
+            border: 0px solid white;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+        }
+        .box1>img{
+            width: 150px;
+            height: auto;
+        }
+        p~a{
+            text-decoration: none;
+            color: white;
+        }
+        a~.iso_footer{
+            margin-top: 70px;
+            width: 110px;
+            height: auto;
+        }
+        .box2{
+            border: 0px solid white;
+            margin-top: 10px;
+            font-size: 32px;
+            display: flex;
+
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+            padding-left: 0px;
+        }
+        .hor1{
+            height: 2px;
+            width: 300px;
+            background-color: goldenrod;
+        }
+        .subbox1{
+            border: 0px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            text-align: left;
+            align-items:start;
+        }
+        .z{
+            display: flex;
+            flex-direction: row;
+            margin-top:20px;
+            margin-left: 0px;            
+        }
+        .subsubbox1{
+            border:0px solid white;
+            margin: 2px;
+            margin-left: 0px;
+            padding-left:0px;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: start;
+        }
+        .subsubbox2{
+            border:0px solid white;
+            margin: 2px;
+            margin-left: 0px;
+            padding-left: 0px;
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: start;
+        }
+        .item{
+            margin: 10px 0;
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .item>a{
+            text-decoration: none;
+            color: white;
+        }
+        .box3{
+            border: 0px solid white;
+            margin-top: 10px;
+            font-size: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+
+        }
+        .box1,.box2,.box3{
+            flex-grow: 1;/*Ensure the boxes grow to fit the container*/
+            flex-basis: 0;/*Ensure the boxes shrink properly*/
+        }
+ 
+    </style>
+    <footer class="container">
+            <div class="box box1">
+            <img src="PWSkills-white.png" alt="">
+            <p style="font-weight: bold; margin-bottom: 0px;">
+                Email us:
+            </p>
+            <a href="support@pwskills.com" style="margin-top: 0px;">support@pwskills.com</a>
+            <img src="ISO-9001.png" alt="" class="iso_footer">
+            <p>ISO 9001</p>
+            </div>
+            <div class="box box2">
+                <div class="subbox1">
+                     <p>PW Skills</p>
+                     <div class="hor1"></div>
+                  
+                 <div class="z">
+                    <div class="subsubbox1">
+                        <ul type="none">
+                           <li class="item item1">
+                               <a href="#">About</a>
+                           </li >
+                           <li class="item item2">
+                               <a href="#">FAQs</a>
+                           </li>
+                           <li class="item item3">
+                               <a href="#">Privacy policy</a>
+                           </li>
+                        </ul>
+                       </div>
+                       <div class="subsubbox2">
+                           <ul type="none">
+                              <li class="item item4">
+                                  <a href="#">Contact Us</a>
+                              </li >
+                              <li class="item item5">
+                                  <a href="#">Job <br> assistance</a>
+                              </li>
+                              <li class="item item6">
+                                  <a href="#">Terms and<br>Conditions</a>
+                              </li>
+                           </ul>
+                          </div>
+                 </div>
+                </div>
+            </div>   
+            <div class="box box3">
+                <div class="subbox1">
+                     <p>Products</p>
+                     <div class="hor1"></div>
+
+                    <div class="subsubbox1">
+                        <ul type="none">
+                           <li class="item item1">
+                               <a href="#">PW Skills Lab</a>
+                           </li >
+                           <li class="item item2">
+                               <a href="#">Job Portal</a>
+                           </li>
+                           <li class="item item3">
+                               <a href="#">Experience</a>
+                           </li>
+                           <li class="item item4">
+                            <a href="#">Become an affiliate</a>
+                           </li>
+                           <li class="item item5">
+                            <a href="#">Hall of fame</a>
+                           </li>
+                        </ul>
+                       </div>
+                       
+                </div>
+            </div>   
+    </footer>
+    
+</body>
+</html>

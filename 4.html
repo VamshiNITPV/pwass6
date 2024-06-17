@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .container_header{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: between;
+            padding: 0 min(5vw, 72px);
+            font-size: 44;
+            font-weight: 400;
+            border: 0px solid black;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            box-shadow: 3px 1px 1px rgb(152, 147, 147);
+            background-color: white;            
+        }
+        img{
+            width: 35px;
+            height: auto;
+            padding-top: 5px;
+        }
+        .container_mail{
+           float: left;
+           left: 50px;
+           flex-basis: 55%;
+        }
+        a{
+            text-decoration: none;
+        }
+        /* .container_links{
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            gap: 20px;
+            font-size: 15px;
+        } */
+        .link1{
+            padding: 10px;
+            border: 0px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            color: rgb(41, 150, 234);
+            display: inline-block;
+            flex-grow: 1;
+            text-align: center;
+            z-index: 1;
+        }
+        .link1>a{
+            color: rgb(41, 150, 234);
+        }
+        .link1:hover{
+            background-color: rgb(245, 247, 247);
+        }
+        .link2{
+            border-radius: 2px;
+            margin: 10px;
+            color: rgb(41, 150, 234);
+            background-color: rgb(245, 247, 247);
+            display: inline-block;
+            flex-grow: 1;
+            text-align: center;
+            z-index: 3;
+
+        }
+        .link3{
+            flex-grow: 1;
+            z-index: 2;
+        }
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            color: rgb(91, 175, 240);
+            border: rgb(245, 247, 247);
+            background-color: rgb(245, 247, 247);
+            font-size: 20px;
+        }
+        #website{
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: rgb(100, 174, 230);
+            color: white;
+            text-align: center;
+            margin-top: 5px;
+        }
+        option{
+            background-color: rgb(41, 150, 234);
+            color: white;
+        }
+        
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            
+
+        }
+        .box1{
+            margin: 135px;
+            margin-top: 150px;
+            width: 32vw;
+            display: flex;
+            flex-direction: column;
+            border: 0px solid black;
+        }
+        .for_you{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 10px;
+            padding: 20px;
+            padding-left: 0px;
+            align-items: center;
+        }
+        h1{
+            font-size: 250%;
+        }
+        .box2{
+            width: 48vw;
+            height: auto;
+            border: 0px solid;
+            margin-top: 150px;
+        }
+        .box2>img{
+            width:45vw;
+        }
+    </style>
+    <header>
+             <div class="container_header">
+                <div class="container_mail">
+                    <a href="#" style=""><img src="logo-gmail.png" alt="email_logo">Gmail</a>
+                </div>
+                    <div class="link1">
+                        <a href="https://workspace.google.com/products/gmail/index.html?utm_source=gmailforwork&utm_medium=et&utm_campaign=nav&utm_content=forwork">For work</a>
+                    </div>
+                    <div class="link2">
+                        <button type="submit">Sign in</button>
+                    </div>
+                    <div class="link3">
+                        <label for="website"></label>
+                        <input list="websites" id="website" name="website" placeholder="Create an account"/>
+                        <datalist id="websites">
+                            <option value="For my personal use" class="web">
+                            <option value="FOr my personal business" class="web">
+                        </datalist>
+                        
+                    </div>
+             </div>
+    </header>
+    <div class="main">
+        <div class="box1">
+             <h1>Secure, smart, and easy to use email</h1>
+             <p>Get mode done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one place.</p>
+             <div class="for_you">
+                <div class="link3">
+                    <label for="website"></label>
+                    <input list="websites" id="website" name="website" placeholder="Create an account"/>
+                    <datalist id="websites">
+                        <option value="For my personal use" class="web">
+                        <option value="FOr my personal business" class="web">
+                    </datalist>
+                </div>
+                <div class="link1">
+                    <a href="https://workspace.google.com/products/gmail/index.html?utm_source=gmailforwork&utm_medium=et&utm_campaign=nav&utm_content=forwork">For work</a>
+                </div>
+             </div>
+        </div>
+        <div class="box2">
+            <img src="4th_img.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

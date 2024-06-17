@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(86, 81, 81);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-flow: row;
+
+        }
+        .container{
+            margin-top: 250px;
+            margin-left: 250px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            flex-flow: row;
+            width: 1000px;
+            height: 200px;
+            height: auto;
+            position: relative;
+        }
+        .box{
+            border: 10px solid white;
+            border-radius: 100%;
+            padding: 0px;
+        }
+        .box>img{
+            border-radius: 100%;
+        }
+        .box1{
+            position: absolute;
+            z-index: 4;
+        }
+        .box2{
+            position: absolute;
+            left: 150px;
+            z-index: 3;
+        }
+        .box3{
+            position: absolute;
+            left: 300px;
+            z-index: 2;
+        }
+        .box4{
+            position: absolute;
+            left: 450px;
+            z-index: 1;
+        }
+        .box>img{
+            width: 200px;
+            
+        }
+    </style>
+    <div class="container">
+        <div class="box box1">
+             <img src="IMG_20221122_130350.jpg" alt="">
+        </div>
+        <div class="box box2">
+            <img src="IMG_20221122_130350.jpg" alt="">
+        </div>
+        <div class="box box3">
+            <img src="IMG_20221122_130350.jpg" alt="">
+        </div>
+        <div class="box box4">
+            <img src="IMG_20221122_130350.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
